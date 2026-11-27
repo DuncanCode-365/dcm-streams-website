@@ -119,6 +119,25 @@
       font-size: 22px;
     }
 
+
+    /* Official responsive DCM Streams website logo. */
+    .brand-logo {
+      display: block;
+      width: 140px;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    
+    @media (max-width: 540px) {
+      .brand-logo {
+        width: 110px;
+      }
+    }
+    
+
     .brand-name {
       font-size: 24px;
       font-weight: 800;
@@ -513,8 +532,10 @@
       <a class="brand" href="#home"
          aria-label="DCM Streams home">
 
-        <span class="brand-symbol"
-              aria-hidden="true">&#9654;</span>
+        <!-- Official DCM Streams brand logo. -->
+        <img class="brand-logo"
+             src="dcm-streams-logo.png"
+             alt="DCM Streams - All Live Channels">
 
         <div>
           <div class="brand-name">DCM Streams</div>
